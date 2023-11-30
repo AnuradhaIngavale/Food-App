@@ -34,7 +34,7 @@ public class ConfirmOrderController extends HttpServlet {
 
 		ItemsDao dao = new ItemsDao();
 		Items items2 = dao.saveItems(items);
-		// list.add(items2);
+		list.add(items2);
 	
 		if (items2 != null) {
 			req.setAttribute("list", list);
